@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+
 import './App.css';
 
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 
-import Header from './components/HeroSection';
-import Cards from './components/Cards';
+import Header from './components/Header';
+import Gigs from './components/Gigs';
 import Footer from './components/Footer';
+import Navbar from './components/Nav';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Router>
         <Navbar />
       <Header/>
-      <Cards/>
+      <Gigs/>
         <Footer/>
          
       
