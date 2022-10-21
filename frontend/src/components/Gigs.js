@@ -5,36 +5,36 @@ import GigDetails from './GigDetails';
 
 function Gigs() {
   return (
-    <div className='cards'>
+    <div className='Gigs'>
      
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
+      <div className='Gigscontainer'>
+        <div className='Gigboundry'>
+          <ul className='Giginside '>
             <GigDetails
               src='images/gig1.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
-              path='/services'
+              text='I can do C++ programming. OOP DataStructures'
+              label='Ali hamza'
+              path='https://www.fiverr.com/share/WDVjjL'
             />
             <GigDetails
               src='images/gig2.png'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
-              path='/services'
+              text='I can do webdevelopment. Using react express in html css js'
+              label='Mahad rahat'
+              path='https://www.fiverr.com/share/R9bvoR'
             />
          
           
             <GigDetails
               src='images/gig3.png'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/services'
+              text='I can do java programming. OOP DataStructures'
+              label='Ehsan Rasul'
+              path='https://www.fiverr.com/share/6NwPLP'
             />
             <GigDetails
               src='images/gig4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/products'
+              text='I can do video editing. Software i use is adobe premier pro'
+              label='Abdullah Malik'
+              path='https://www.fiverr.com/share/6NwPLP'
             />
             
           </ul>

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import './Nav.css';
 import logo from './logot.png'
 
@@ -7,9 +6,9 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <a href='/' className='navbar-logo'>
+      <nav className='Nav'>
+        <div className='Navcontainer'>
+          <a href='/' className='logo'>
             <img src = {logo} width = "15%"/>
          
           </a>

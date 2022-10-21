@@ -1,22 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function GigDetails(props) {
   return (
     <>
-      <li className='cards__item'>
-        <Link className='cards__item__link' to={props.path}>
-          <figure className='cards__item__pic-wrap' data-category={props.label}>
-            <img
-              className='cards__item__img'
-              alt='Travel Image'
-              src={props.src}
-            />
+      <li className='Gigdetails'>
+        <a className='link' href={props.path}>
+          <figure className='label' data-category={props.label}>
+            <img className='img' src={props.src}/>
           </figure>
-          <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+          <div className='details'>
+            <h5 className='text'>{props.text}</h5>
           </div> 
-        </Link>
+        </a>
       </li>
     </>
   );
