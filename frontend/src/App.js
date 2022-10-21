@@ -10,6 +10,8 @@ import SignUp from './components/pages/SignUp';
 function App() {
   return (
     <>
+
+    <td>something</td>
       <Router>
         <Navbar />
         
