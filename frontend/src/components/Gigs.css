@@ -6,12 +6,17 @@
  
   
   .Gigscontainer {
-    display: flex;
+    display:flex;
     flex-flow: column;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
+  }
+  .Gigscontainer >*{
+    flex: 1 1 80px;
   }
   
   h1 {
@@ -30,17 +35,20 @@
    
   @media only screen and (min-width: 1024px) {
     .Giginside {
-      display: flex;
+      display:flex;
     }
   }
   
   .Gigdetails {
     display: flex;
-    flex: 1;
+    flex: 1 1 180px;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0 1rem;
     border-radius: 10px;
   }
-  
+
+ 
   .link {
     display: flex;
     flex-flow: column;
@@ -93,6 +101,7 @@
   .img:hover {
     transform: scale(1.1);
   }
+ 
   
   .details {
     padding: 20px 30px 30px;
