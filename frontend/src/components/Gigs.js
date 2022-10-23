@@ -6,41 +6,47 @@ import './Gigs.css';
 
 import GigDetails from './GigDetails';
 
+
+var data = [
+  { 
+      img : 'images/gig1.jpg', 
+      Name: "Mahad Rahat ",
+      Details : "I can do c++ programming. OOP data structures",
+      location : '/Gigpage'
+      
+      
+  },
+
+  {
+
+    img : 'images/gig2.png', 
+    Name : "hamza Azam",
+    Details : "I can do webdevelopment. Using react express in html css js",
+    location : '/Gigpage'
+  },
+
+  {
+
+    img : 'images/gig3.png', 
+    Name : "Ehsan Rasul",
+    Details : "I can do java programming. OOP DataStructures",
+    location : '/Gigpage'
+
+  },
+
+  {
+
+    img : 'images/gig4.jpg', 
+    Name : "Abdullah Malik",
+    Details : "I can do video editing. Software i use is adobe premier pro",
+    location : '/Gigpage'
+
+  }
+
+]
+
 function Gigs() {
 
-  var data = [
-    { 
-        img : 'images/gig1.jpg', 
-        Name: "Mahad",
-        Details : "I can do c++ programming. OOP data structures"
-        
-        
-    },
-
-    {
-
-      img : 'images/gig2.png', 
-      Name : "hamza",
-      Details : "I can do webdevelopment. Using react express in html css js"
-    },
-
-    {
-
-      img : 'images/gig3.png', 
-      Name : "Ehsan",
-      Details : "I can do java programming. OOP DataStructures"
-
-    },
-
-    {
-
-      img : 'images/gig4.jpg', 
-      Name : "Abdullah",
-      Details : "I can do video editing. Software i use is adobe premier pro"
-
-    }
-
-  ]
   return (
 
     
@@ -52,13 +58,13 @@ function Gigs() {
           
        
           <ul className='Giginside '>
-          {data.map(({Name,Details, img})=>(
+          {data.map(({Name,Details, img,location})=>(
             <GigDetails
             
               src= {img}
               text={Details}
               label={Name}
-              path='https://www.fiverr.com/share/R9bvoR'
+              path= '/Gigpage'
 
              
             />
