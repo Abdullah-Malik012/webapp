@@ -67,6 +67,38 @@
     padding-top: 67%;
     overflow: hidden;
   }
+
+  .price{
+  
+    width: 10%;
+    height: 4ch;
+   
+    
+  
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+  }
+.Name{
+  width:auto;
+    height: 2ch;
+   
+    
+  
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+  
+}
+  .title{
+
+    border-style:ridge ;
+  border-width: 7px;
+  }
  
   
   .label::after {
@@ -115,3 +147,18 @@
     }
   }
   
+  .GigpageContainer{
+
+    margin-left: 15%;
+  
+    border-style:inset;
+    display:flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    max-width: 1120px;
+    width: fit-content;
+  
+ margin: 30px;
+  }

@@ -1,10 +1,7 @@
 import React from 'react';
 import './Gigs.css';
-
-
-
-
 import GigDetails from './GigDetails';
+import Gigpage from './Gigpage';
 
 
 var data = [
@@ -12,7 +9,8 @@ var data = [
       img : 'images/gig1.jpg', 
       Name: "Mahad Rahat ",
       Details : "I can do c++ programming. OOP data structures",
-      location : '/Gigpage'
+      location : '/Gigpage',
+      price: "20$"
       
       
   },
@@ -22,7 +20,8 @@ var data = [
     img : 'images/gig2.png', 
     Name : "hamza Azam",
     Details : "I can do webdevelopment. Using react express in html css js",
-    location : '/Gigpage'
+    location : '/Gigpage',
+    price: "20$"
   },
 
   {
@@ -30,7 +29,8 @@ var data = [
     img : 'images/gig3.png', 
     Name : "Ehsan Rasul",
     Details : "I can do java programming. OOP DataStructures",
-    location : '/Gigpage'
+    location : '/Gigpage',
+    price: "20$"
 
   },
 
@@ -39,11 +39,13 @@ var data = [
     img : 'images/gig4.jpg', 
     Name : "Abdullah Malik",
     Details : "I can do video editing. Software i use is adobe premier pro",
-    location : '/Gigpage'
+    location : '/Gigpage',
+    price: "20$"
 
   }
 
 ]
+
 
 function Gigs() {
 
