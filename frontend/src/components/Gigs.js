@@ -3,6 +3,32 @@ import './Gigs.css';
 import GigDetails from './GigDetails';
 import Gigpage from './Gigpage';
 
+const [jobInfo,setJobData]= React.useState([{}]);
+
+        console.log('calling apis Fetch Jobs Class')
+
+        const data1={};
+        useEffect(()=>{
+            fetch('/jobDisplay', {
+                method: 'POST', // or 'PUT' 
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                },
+                body: JSON.stringify(data1),
+              })
+                .then((response) => response.json())
+                .then((data) => {
+    
+                    setJobData(data);
+                    console.log(data);
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                });    
+
+
+        },[]);
 
 var data = [
   { 
