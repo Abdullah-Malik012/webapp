@@ -12,6 +12,8 @@ function Gigpage(props) {
         
         
     },
+
+
   
   
   ]
@@ -21,18 +23,17 @@ function Gigpage(props) {
  
 <div className ="GigpageContainer" >
 
-{data.map(({Name, title,img, price, description})=>(
+{/* {data.map(({Name, title,img, price, description})=>( */}
   <>
-   <h className = "Name">{Name}</h>
-  <img src={img} />
+   <h className = "Name">{props.Name}</h>
+  <img src={props.img} />
   <td></td>
-  <h1 className = "title">{title}</h1>
-  <td className = "price">{price}</td>
+  <h1 className = "title">{props.title}</h1>
+  <td className = "price">{props.price}</td>
 
   </>
-
-))
-}
+ {/* )) */}
+{/* } */}
 
 </div>
     </div>
