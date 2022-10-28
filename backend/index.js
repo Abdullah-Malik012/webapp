@@ -1,7 +1,7 @@
-const express =require('express'); 
-const bodyParser =require('body-parser');
-
-const router =require('./routes/users.js');
+import express from 'express'; 
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import router from './routes/users.js';
 
 
 const app = express()

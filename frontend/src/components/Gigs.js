@@ -1,36 +1,12 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import './Gigs.css';
 import GigDetails from './GigDetails';
 import Gigpage from './Gigpage';
-
-const [jobInfo,setJobData]= React.useState([{}]);
-
-        console.log('calling apis Fetch Jobs Class')
-
-        const data1={};
-        useEffect(()=>{
-            fetch('/jobDisplay', {
-                method: 'POST', // or 'PUT' 
-                headers: {
-                  'Content-Type': 'application/json',
-                  'Accept': 'application/json'
-                },
-                body: JSON.stringify(data1),
-              })
-                .then((response) => response.json())
-                .then((data) => {
-    
-                    setJobData(data);
-                    console.log(data);
-                })
-                .catch((error) => {
-                  console.error('Error:', error);
-                });    
+import {Link } from 'react-router-dom'
 
 
-        },[]);
 
-var data = [
+var datae = [
   { 
       img : 'images/gig1.jpg', 
       Name: "Mahad Rahat ",
@@ -73,12 +49,19 @@ var data = [
 ]
 
 
+
+
+
 function Gigs() {
+
 
   return (
 
+    <>
     
-    <div className='Gigs'>
+  
+
+<div className='Gigs'>
      
      
       <div className='Gigscontainer'>
@@ -86,29 +69,30 @@ function Gigs() {
           
        
           <ul className='Giginside '>
-          {data.map(({Name,Details, img,location})=>(
+          {datae.map(({img, Name, Details})=>(
             <GigDetails
-            
-              src= {img}
+           
+               src= {img}
+          
               text={Details}
               label={Name}
               path= '/Gigpage'
 
              
             />
-            
-
-            ))
-          }
-         
-           
-             
+          ) )}
          
           </ul>
           
         </div>
       </div>
     </div>
+
+
+
+</>
+
+  
 
 
   );
