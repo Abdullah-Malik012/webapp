@@ -36,3 +36,32 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+mongoose.connect("mongodb://localhost:27017/jobdb" , {useNewUrlParser :true});
+    
+    const jobRequestSchema = new  mongoose.Schema({
+       Name: String,
+       Title: String,
+       Price: String,
+       Description: String,
+       
+     });
+
+ const JobPost=mongoose.model("JobPost",jobRequestSchema);
+
+ app.post('/jobDisplay', (req, res) => {    
+    const g = JobPost.find(function(err, use){
+
+      if(err){
+
+          console.log('Check');
+
+      }else{
+
+       console.log('getting data for display');
+      res.send(use);
+      }
+
+  });   
+})
+
