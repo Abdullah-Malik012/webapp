@@ -10,9 +10,7 @@ env:
 
 jobs:
   build-and-deploy:
-   defaults:
-      run:
-        working-directory: ./frontend
+   
     runs-on: ubuntu-latest
     
 
