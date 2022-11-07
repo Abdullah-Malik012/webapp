@@ -16,8 +16,8 @@ function App() {
         <Navbar />
        
         <Routes>
-<Route path='/' exact element={<Homepage/>} />
-<Route path='/Gigpage' element={<Gigpage/>} />
+        <Route path='/' exact element={<Homepage/>} />
+        <Route path='/Gigpage' element={Gigpage()} />
 
 
 

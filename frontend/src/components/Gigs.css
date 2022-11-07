@@ -73,8 +73,6 @@
     width: 10%;
     height: 4ch;
    
-    
-  
     font-size: 22px;
     font-weight: 700;
     color: #fff;
@@ -85,8 +83,6 @@
   width:auto;
     height: 2ch;
    
-    
-  
     font-size: 22px;
     font-weight: 700;
     color: #fff;
@@ -100,7 +96,12 @@
   border-width: 7px;
   }
  
-  
+  .detailss{border-style:groove ;
+    border-width: 7px;
+
+    font-size: large;
+    
+  }
   .label::after {
     content: attr(data-category);
     position: absolute;
